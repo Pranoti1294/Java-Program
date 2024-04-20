@@ -1,16 +1,15 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class SortArrayList {
-    
+public class ReverseArrayList {
     public static void main(String[] args) {
         ArrayList<String> a = addColors();
-        sortArrayList(a);
+        reverseArrayList(a);
         display(a);
     }
     
-    private static void sortArrayList(ArrayList<String> a) {
-        Collections.sort(a);
+    private static void reverseArrayList(ArrayList<String> a) {
+        Collections.reverse(a);
     }
     
     private static void display(ArrayList<String> a) {
@@ -29,4 +28,5 @@ public class SortArrayList {
          a.add("Pink");
          return a;
     }
+    
 }

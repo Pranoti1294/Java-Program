@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class SortArrayList {
-    
+public class SwapTwoArrayList {
     public static void main(String[] args) {
         ArrayList<String> a = addColors();
-        sortArrayList(a);
+        swap(a,2,4);
         display(a);
     }
-    
-    private static void sortArrayList(ArrayList<String> a) {
-        Collections.sort(a);
+    private static void swap(ArrayList<String> a, int i, int j) 
+    {
+        Collections.swap(a,i,j);
+        
     }
-    
+   
     private static void display(ArrayList<String> a) {
         for (String color : a) {
             System.out.println(color);
@@ -29,4 +29,5 @@ public class SortArrayList {
          a.add("Pink");
          return a;
     }
+    
 }

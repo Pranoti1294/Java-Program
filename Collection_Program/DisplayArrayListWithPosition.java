@@ -1,21 +1,17 @@
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class SortArrayList {
-    
+public class DisplayArrayListWithPosition {
     public static void main(String[] args) {
         ArrayList<String> a = addColors();
-        sortArrayList(a);
-        display(a);
+        
+        displayWithIndex(a);
     }
     
-    private static void sortArrayList(ArrayList<String> a) {
-        Collections.sort(a);
-    }
     
-    private static void display(ArrayList<String> a) {
+    private static void displayWithIndex(ArrayList<String> a) {
         for (String color : a) {
-            System.out.println(color);
+            int pos = a.indexOf(color)+1;
+            System.out.println(pos+" "+color);
         }
     }
     
@@ -29,4 +25,5 @@ public class SortArrayList {
          a.add("Pink");
          return a;
     }
+    
 }
